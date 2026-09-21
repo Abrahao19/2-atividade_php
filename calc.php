@@ -1,12 +1,17 @@
  <?php
     $operacao = $_POST["operacao"];
-
+    $nome = $_POST ["Nome"];
     $number = $_POST["number"];
     $number2 = $_POST["number2"];
     $resposta;
 
+    function saudar($nome) {
+    echo "Olá, $nome! Seja bem-vindo.<br>";
+}
 
-   function calculador($operacao,$number,$number2){
+saudar("$nome");
+
+   function calculo($operacao,$number,$number2){
       if($operacao === "+"){
         $resposta = $number + $number2; 
         echo "O resultado da adição $resposta";
@@ -27,6 +32,6 @@
         };
       }
    };
-    calculador($operacao,$number,$number2);
+    calculo($operacao,$number,$number2);
 
   ?>

@@ -6,14 +6,18 @@
     <title>Atividade PHP</title>
 </head>
 <body>
-    <pre>
+    <pre>   
+       
+ 
      <form action="calc.php" method="post">
-         <label for="number">Numeros:</label>
+        <label for="number">Seu nome:</label>
+         <input type="text" name="Nome">
+
+         <label for="number">Numero 1:</label>
          <input type="number" name="number" >
 
-        <label for="number2">Numeros2:</label>
+        <label for="number2">Numero 2:</label>
          <input type="number" name="number2" >
-         
          
         <select name="operacao" >
             <option value="+">Adição</option>
@@ -21,6 +25,8 @@
             <option value="*">Multiplicar</option>
             <option value="/">Dividir</option>
         </select>
+
+
          <input type="submit" value="Enviar">
          <input type="reset" value="limpar">
         
